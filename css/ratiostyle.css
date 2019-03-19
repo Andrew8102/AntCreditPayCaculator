@@ -1,0 +1,81 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+table {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+table th,table td {
+  padding:7px;
+  border:1px solid #888;
+  
+}
+
+input[type=checkbox],input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    vertical-align: -0.8rem;
+    transition:all .15s ease-out 0s;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: .4rem;
+    outline: none;
+    border-radius: 10%;
+}
+
+
+
+/* Radio */
+input[type=radio] {
+    border-radius: 50%;
+}
+
+input[type=radio]:checked:before {
+    transform: scale(1);
+}
+
+input[type=radio]:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 3px;
+    transform: scale(0);
+    transition: all ease-out 250ms;
+}
+
+/* Colors */
+input[type=checkbox],input[type=radio] {
+    border: 3px solid #4caf50;
+}
+
+input[type=checkbox]:checked,input[type=checkbox]:indeterminate,input[type=radio]:checked:before {
+    background: #4caf50;
+}
+
+/* Complement colors */
+input[type=checkbox].blue,input[type=radio].blue {
+    border: 2px solid #2196f3;
+}
+
+    input[type=checkbox].blue:checked, input[type=checkbox].blue:indeterminate, input[type=radio].blue:checked:before {
+        background: #2196f3;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.3)
+    }
+
+
+
+}
